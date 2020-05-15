@@ -606,6 +606,7 @@ under the License.
                 <maven.compiler.source>${maven.compiler.source}</maven.compiler.source>
                 <maven.compiler.target>${maven.compiler.target}</maven.compiler.target>
               </properties>
+              <javaHome>${java.home}</javaHome>
             </configuration>
           </plugin>
           <plugin>
