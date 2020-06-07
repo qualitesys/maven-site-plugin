@@ -196,7 +196,8 @@ under the License.
 
   <properties>
     <mavenVersion>3.0.5</mavenVersion>
-    <javaVersion>7</javaVersion>
+    <javaVersion>8</javaVersion>
+
     <!-- for dependencies -->
     <doxiaVersion>1.9.1</doxiaVersion>
     <doxiaSitetoolsVersion>1.9.2</doxiaSitetoolsVersion>
@@ -211,6 +212,9 @@ under the License.
     <projectInfoReportsPluginVersion>2.7</projectInfoReportsPluginVersion>
     <surefirePluginVersion>2.22.1</surefirePluginVersion>
     <project.build.outputTimestamp>2020-03-06T20:49:49Z</project.build.outputTimestamp>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <jettyVersion>9.4.12.v20180830</jettyVersion>
   </properties>
 
   <dependencies>
@@ -373,7 +377,6 @@ under the License.
       <version>${doxiaVersion}</version>
       <scope>runtime</scope>
     </dependency>
-
     <!-- Doxia Sitetools -->
     <dependency>
       <groupId>org.apache.maven.doxia</groupId>
@@ -440,6 +443,13 @@ under the License.
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-client</artifactId>
+      <version>${jettyVersion}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-proxy</artifactId>
       <version>${jettyVersion}</version>
       <scope>test</scope>
     </dependency>
